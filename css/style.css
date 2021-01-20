@@ -1,0 +1,11 @@
+.cajaPrincipal{
+    height: 20em;
+    width: 50em;
+    border: 0.1em solid black;
+    border-radius: 4.5em 4.5em 4.5em 4.5em;
+
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    
+}
