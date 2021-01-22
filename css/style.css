@@ -87,6 +87,16 @@
     border-radius: 50%;
     margin-top: 0.2em;
     background: linear-gradient(to top right, black,rgb(119, 112, 112) );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.triangulo3{
+    width: 0;
+    height: 0;
+    border-bottom: 0.6em solid black;
+    border-left: 0.3em solid transparent;
+    border-right: 0.3em solid transparent;
 }
 .arrowleftright{
     width: 5.4em;
@@ -101,6 +111,16 @@
     border-radius: 50%;
     background: linear-gradient(to top right, black,rgb(119, 112, 112) );
     margin-left: 0.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.triangulo2{
+    width: 0;
+    height: 0;
+    border-right: 0.6em solid black;
+    border-top: 0.3em solid transparent;
+    border-bottom: 0.3em solid transparent;
 }
 .botonright{
     width: 1.4em;
@@ -108,6 +128,16 @@
     border-radius: 50%;
     background: linear-gradient(to top right, black,rgb(119, 112, 112) );
     margin-right: 0.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.triangulo{
+    width: 0; 
+    height: 0; 
+    border-left: 0.6em solid black;
+    border-top: 0.3em solid transparent;
+    border-bottom: 0.3em solid transparent; 
 }
 .arrowdown{
     width: 5.4em;
@@ -122,7 +152,16 @@
     margin-bottom: 0.2em;
     border-radius: 50%;
     background: linear-gradient(to top right, black,rgb(119, 112, 112) );
-   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.triangulo1 {
+    width: 0; 
+    height: 0; 
+    border-top: 0.6em solid black;
+    border-left: 0.3em solid transparent;
+    border-right: 0.3em solid transparent; 
 }
 .espaciado3{
     width: 0.8em;
