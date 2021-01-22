@@ -9,7 +9,6 @@
     margin: 0;
     top:0;
     left:0;
-
     background-color:white;
 }
 .cajaPrincipal{
@@ -23,27 +22,135 @@
 .mandoAzul{
     width: 7em;
     height: 20em;
-    border: 0.1em solid black;
+    border: 0.1em solid turquoise;
     border-radius: 4.5em 0.3em 0.3em 4.5em;
-    background-color: rgb(0,188,215);
+    background: linear-gradient(to right, rgb(0,126,145),rgb(0,182,212));
     display: flex;
+    flex-direction: column;
 }
-.joyblue{
-    width: 3.5em;
-    height: 3.5em;
-    border:0.2em;
-    border-radius: 50%;
-    border-color: grey;
-    background: linear-gradient(to top , black, rgb(104, 98, 98));
-    margin-left: 1.75em;
-    margin-top: 4em;
+.contenedormenos{
+    width: 7em;
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .menos{
     width: 1em;
     height: 0.3em;
-    margin-top: 1.2em;
-    margin-right: 0.3em;
+    margin-left: 5em;
+    background-color: rgb(75, 72, 72);
+}
+.contenedorjoystickazul{
+    width: 7em;
+    height: 6.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.joyblue{
+    width: 2.5em;
+    height: 2.5em;
+    border:0.2em solid rgb(66, 66, 66);
+    border-radius: 50%;
+    background: linear-gradient(to top , black, rgb(104, 98, 98));
+    margin-bottom: 0.7em;
+}
+.contenedorflechas{
+    width: 7em;
+    height: 5.4em;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.espaciador1{
+    width: 0.8em;
+    height: 5.4em;
+}
+.contenedorArrows{
+    width: 5.4em;
+    height: 5.4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.arrowup{
+    width: 5.4em;
+    height: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botonup{
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 50%;
+    margin-top: 0.2em;
+    background: linear-gradient(to top right, black,rgb(119, 112, 112) );
+}
+.arrowleftright{
+    width: 5.4em;
+    height: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.botonleft{
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 50%;
+    background: linear-gradient(to top right, black,rgb(119, 112, 112) );
+    margin-left: 0.4em;
+}
+.botonright{
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 50%;
+    background: linear-gradient(to top right, black,rgb(119, 112, 112) );
+    margin-right: 0.4em;
+}
+.arrowdown{
+    width: 5.4em;
+    height: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botondown{
+    width: 1.4em;
+    height: 1.4em;
+    margin-bottom: 0.2em;
+    border-radius: 50%;
+    background: linear-gradient(to top right, black,rgb(119, 112, 112) );
+   
+}
+.espaciado3{
+    width: 0.8em;
+    height: 5.4em;
+}
+.contenedorstart{
+    width: 7em;
+    height: 8.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botonstart{
+    width: 1.3em;
+    height: 1.3em;
+    background: linear-gradient(to top right, black,rgb(119, 112, 112) );
+    margin-bottom: 3.8em;
+    margin-left: 2em;
+    border-radius: 0.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circulostart{
+    width: 0.9em;
+    height: 0.9em;
     background-color: black;
+    border-radius: 50%;
 }
 /*Pantalla Principal*/
 .pantalla{
@@ -81,11 +188,12 @@
 .mandorojo{
     width: 7em;
     height: 20.2em;
-    background: linear-gradient(to left, rgb(231, 32, 45), rgb(255,75,79));
+    background: linear-gradient(to left, rgb(217,28,43), rgb(241, 85, 87));
     border-radius: 0.3em 4em 4em 0.3em;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 0.15 solid red;
 }
 /*Inserción del boton más*/
 .contenedormas{
@@ -106,11 +214,16 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}    
+/*Tipo de fuente y tamaño de las letras*/
+p{
+    font-size: small;
+    font-family: Arial;
 }
+
 .espacio1{
     width: 0.8em;
     height: 5.4em;
-    
 }
 .botonera{
     width: 5.4em;
@@ -133,8 +246,12 @@
     width: 1.4em;
     height: 1.4em;
     border-radius: 50%;
+    margin-top: 0.2em;
     background: linear-gradient(to top right, black,rgb(119, 112, 112) );
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
 .fila2{
@@ -148,14 +265,24 @@
 .botonY{
     width: 1.4em;
     height: 1.4em;
+    margin-left: 0.2em;
     background: linear-gradient(to top right, black,rgb(119, 112, 112) );
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 .botonA{
     width: 1.4em;
     height: 1.4em;
+    margin-right: 0.2em;
     background: linear-gradient(to top right, black,rgb(119, 112, 112) );
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 .fila3{
     width: 5.4em;
@@ -168,8 +295,13 @@
 .botonB{
     width: 1.4em;
     height: 1.4em;
+    margin-bottom: 0.2em;
     border-radius: 50%;
     background: linear-gradient(to top right, black,rgb(119, 112, 112) );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 /*Joystick del mando rojo*/
 .contenedorjoystick{
@@ -185,7 +317,7 @@
     height: 2.5em;
     border-radius: 50%;
     background: linear-gradient(to top right, black,rgb(119, 112, 112) );
-    border: 0.2em  linear-gradient(to top left,black, rgb(24, 20, 20));
+    border: 0.2em solid rgb(66, 66, 66);
 }
 
 /*Boton home del mando rojo*/
@@ -195,10 +327,10 @@
     display: flex;
 }
 .botonhome{
-    width: 1.2em;
-    height: 1.2em;
+    width: 1.1em;
+    height: 1.1em;
     border-radius: 50%;
-    border: 0.2em solid gray;
+    border: 0.15em solid gray;
     background: linear-gradient(to top right, black,rgb(119, 112, 112));
     margin-left: 0.8em;
 }
