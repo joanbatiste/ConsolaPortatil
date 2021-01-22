@@ -1,10 +1,25 @@
+.contenedor{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top:0;
+    left:0;
+
+    background-color:white;
+}
 .cajaPrincipal{
     height: 20em;
     width: 50em;
     display: flex;
     flex-direction: row;
+    
 }
-
+/*Todos los botones y joystick del mando azul*/
 .mandoAzul{
     width: 7em;
     height: 20em;
@@ -19,7 +34,7 @@
     border:0.2em;
     border-radius: 50%;
     border-color: grey;
-    background: linear-gradient(to top , black, rgb(104, 98, 98));;
+    background: linear-gradient(to top , black, rgb(104, 98, 98));
     margin-left: 1.75em;
     margin-top: 4em;
 }
@@ -30,7 +45,7 @@
     margin-right: 0.3em;
     background-color: black;
 }
-
+/*Pantalla Principal*/
 .pantalla{
     width: 36em;
     height: 20em;
@@ -62,38 +77,128 @@
     background-color: rgb(51,51,51);
     border-radius: 0.2em;
 }
-
-.mandoRojo{
+/*Todos los botones y joystick del mando rojo*/
+.mandorojo{
     width: 7em;
-    height: 20em;
-    border: 0.1em solid black;
-    border-radius: 0.3em 4.5em 4.5em 0.3em;
-    background-color: rgb(255,76,82);
+    height: 20.2em;
+    background: linear-gradient(to left, rgb(231, 32, 45), rgb(255,75,79));
+    border-radius: 0.3em 4em 4em 0.3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Inserción del boton más*/
+.contenedormas{
+    width: 7em;
+    height: 2em;
+    display:flex;
+    align-items: flex-start;
+    justify-content: left;
+    margin-top: 0.8em;
+    margin-left: 0.5em;
 }
 
-.joyred{
+/*Botones de accion mando rojo*/
+.contenedorbotonera{
+    width: 7em;
+    height: 5.4em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.espacio1{
+    width: 0.8em;
+    height: 5.4em;
     
-    width: 3.5em;
-    height: 3.5em;
-    border:0.2em;
+}
+.botonera{
+    width: 5.4em;
+    height: 5.4em;
+    display:flex;
+    flex-direction: column;
+}
+.espacio3{
+    width: 0.8em;
+    height: 5.4em;
+}
+.fila1{
+    width: 5.4em;
+    height: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botonX{
+    width: 1.4em;
+    height: 1.4em;
     border-radius: 50%;
-    border-color: grey;
-    background: linear-gradient(to top , black, rgb(104, 98, 98));;
-    margin-left: 1.73em;
-    margin-top: 7em;
+    background: linear-gradient(to top right, black,rgb(119, 112, 112) );
+    
 }
 
-.masmenos{
-    width: 1em;
-    height: 0.3em;
-    margin-top: 0.02em;
-    margin-left: 0.3em;
-    background-color: black;
+.fila2{
+    width: 5.4em;
+    height: 1.8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
-.mas{
-    width: 0.3em;
-    height: 1em;
-    margin-top: 0.6em;
-    margin-left: 0.7em;
-    background-color: black;
+.botonY{
+    width: 1.4em;
+    height: 1.4em;
+    background: linear-gradient(to top right, black,rgb(119, 112, 112) );
+    border-radius: 50%;
+}
+.botonA{
+    width: 1.4em;
+    height: 1.4em;
+    background: linear-gradient(to top right, black,rgb(119, 112, 112) );
+    border-radius: 50%;
+}
+.fila3{
+    width: 5.4em;
+    height: 1.8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.botonB{
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 50%;
+    background: linear-gradient(to top right, black,rgb(119, 112, 112) );
+}
+/*Joystick del mando rojo*/
+.contenedorjoystick{
+    width: 7em;
+    height: 5.1em;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.joystickrojo{
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    background: linear-gradient(to top right, black,rgb(119, 112, 112) );
+    border: 0.2em  linear-gradient(to top left,black, rgb(24, 20, 20));
+}
+
+/*Boton home del mando rojo*/
+.contenedorhome{
+    width: 7em;
+    height: 7em;
+    display: flex;
+}
+.botonhome{
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+    border: 0.2em solid gray;
+    background: linear-gradient(to top right, black,rgb(119, 112, 112));
+    margin-left: 0.8em;
 }
