@@ -11,6 +11,7 @@
     left:0;
     background-color:white;
 }
+
 .cajaPrincipal{
     height: 20em;
     width: 50em;
@@ -22,7 +23,7 @@
 .mandoAzul{
     width: 7em;
     height: 20em;
-    border: 0.1em solid turquoise;
+    
     border-radius: 4.5em 0.3em 0.3em 4.5em;
     background: linear-gradient(to right, rgb(0,126,145),rgb(0,182,212));
     display: flex;
@@ -195,7 +196,7 @@
 .pantalla{
     width: 36em;
     height: 20em;
-    border: 0.1em solid black;
+    
     border-bottom-right-radius: 0.2em;
     border-bottom-left-radius: 0.2em;
     
@@ -203,7 +204,31 @@
     /*Centrado absoluto de las pantalla*/
     display: flex;
     align-items: center;
-    justify-content: center;
+    
+    flex-direction: column;
+}
+.contenedormuescas{
+    width: 36em;
+    height: 0.5em;
+    
+    display: flex;
+    flex-direction: row;
+}
+.muescaizq{
+    width: 0.6em;
+    height: 0.7em;
+    background-color:white;
+    border-bottom-right-radius: 60%;
+}
+.espaciomuescas{
+    width: 34.8em;
+    height: 0.3em;
+}
+.muescadcha{
+    width: 0.6em;
+    height: 0.7em;
+    background-color:white;
+    border-bottom-left-radius: 60%;
 }
 
 .marco{
@@ -211,6 +236,7 @@
     height: 19em;
     background-color: black;
     border-radius: 0.7em;
+    
     /*Centrado absoluto de las pantalla*/
     display: flex;
     align-items: center;
@@ -226,13 +252,13 @@
 /*Todos los botones y joystick del mando rojo*/
 .mandorojo{
     width: 7em;
-    height: 20.2em;
+    height: 20em;
     background: linear-gradient(to left, rgb(217,28,43), rgb(241, 85, 87));
     border-radius: 0.3em 4em 4em 0.3em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 0.15 solid red;
+    
 }
 /*Inserción del boton más*/
 .contenedormas{
@@ -366,10 +392,10 @@ p{
     display: flex;
 }
 .botonhome{
-    width: 1.1em;
-    height: 1.1em;
+    width: 1em;
+    height: 1em;
     border-radius: 50%;
     border: 0.15em solid gray;
-    background: linear-gradient(to top right, black,rgb(119, 112, 112));
+    background-color:rgb(179, 165, 165);
     margin-left: 0.8em;
 }
